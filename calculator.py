@@ -410,86 +410,122 @@ class Ui_MainWindow(object):
         self.push_equal.clicked.connect(self.method_equal)
         self.push_decimal.clicked.connect(self.method_decimal)
 
-
+    temp=1
     def method_1(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"1")
 
     def method_2(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"2")
 
     
     def method_3(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"3")
 
     
     def method_4(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"4")
 
     
     def method_5(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"5")
 
     
     def method_6(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"6")
 
     
     def method_7(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"7")
 
     
     def method_8(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"8")
         
                 
         
     def method_9(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"9")
         
 
     def method_0(self):
+        if(self.temp==1):
+            self.label.setText("")
+            self.temp=0
         text=self.label.text()
         self.label.setText(text+"0")
 
         
     def method_add(self):
+        self.temp=0
         text=self.label.text()
         self.label.setText(text+"+")
 
 
         
     def method_sub(self):
+        self.temp=0
         text=self.label.text()
         self.label.setText(text+"-")
 
 
         
     def method_mul(self):
+        self.temp=0
         text=self.label.text()
         self.label.setText(text+"*")
 
 
         
     def method_div(self):
+        self.temp=0
         text=self.label.text()
         self.label.setText(text+"/")
 
         
     def method_decimal(self):
+        self.temp=0
         text=self.label.text()
         self.label.setText(text+".")
 
         
     def method_clear(self):
+        self.temp=0
         self.label.setText("")
 
 
@@ -499,6 +535,7 @@ class Ui_MainWindow(object):
         self.label.setText(text[:len(text)-1])
 
     def method_equal(self):
+        self.temp=1
         text=self.label.text()
 
         try:
